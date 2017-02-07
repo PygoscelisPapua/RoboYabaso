@@ -134,6 +134,9 @@ function food(inputStr){
 岩葉拉麵'];
       return '那吃 '+rplyArr[Math.floor((Math.random() * (rplyArr.length)) + 0)]+' 好了';
   }
+  else{
+    return '我不知道那裏有什麼好吃的，嗆我呀 ! !'
+  }
 }
         
 function nomalDiceRoller(inputStr){
