@@ -92,7 +92,7 @@ function parseInput(rplyToken, inputStr) {
         if (inputStr.match('肚子餓') != null) return food(inputStr) ;
         else
         
-        if (inputStr.match('頂天立地') != null) return '上~山~下~海~' ;
+        if (inputStr.match('頂天立地') != null) return '上 ~ 山 ~ 下 ~ 海 ~ ' ;
         else
           
         if (inputStr.match('進餐廳') != null) return '親 愛 精 誠' ;
