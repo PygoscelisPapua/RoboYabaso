@@ -87,7 +87,12 @@ function parseInput(rplyToken, inputStr) {
         console.log('InputStr: ' + inputStr);
         _isNaN = function(obj) {
          return isNaN(parseInt(obj));
-        }                   
+        }  
+        
+        if (inputStr.match('肚子餓') != null) return food(inputStr) ;
+        else
+        
+        
         //鴨霸獸指令開始於此
 
           if (inputStr.match('鴨霸獸') != null) return YabasoReply(inputStr) ;
@@ -105,7 +110,18 @@ function parseInput(rplyToken, inputStr) {
         
       }
 
-
+function food(inputStr){
+  if(inputStr.match('北斗') != null) 
+    
+    let rplyArr=['\
+中華鍋貼', '\
+火鍋','\
+新人類對面麵店','\
+拉仔麵','\
+八方雲集','\
+岩葉拉麵'];
+      return rplyArr[Math.floor((Math.random() * (rplyArr.length)) + 0)];
+}
         
 function nomalDiceRoller(inputStr){
   
