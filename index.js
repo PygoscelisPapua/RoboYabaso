@@ -112,7 +112,6 @@ function parseInput(rplyToken, inputStr) {
 
 function food(inputStr){
   if(inputStr.match('北斗') != null) 
-    
     let rplyArr=['\
 中華鍋貼', '\
 火鍋','\
