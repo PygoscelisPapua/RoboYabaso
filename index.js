@@ -120,7 +120,7 @@ function food(inputStr){
 拉仔麵','\
 八方雲集','\
 岩葉拉麵'];
-      return rplyArr[Math.floor((Math.random() * (rplyArr.length)) + 0)];
+      return '那吃 '+rplyArr[Math.floor((Math.random() * (rplyArr.length)) + 0)]+' 好了';
   }
 }
         
