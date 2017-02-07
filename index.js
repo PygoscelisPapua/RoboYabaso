@@ -111,9 +111,8 @@ function parseInput(rplyToken, inputStr) {
       }
 
 function food(inputStr){
-  if(inputStr.match('北斗') != null) 
-    let rplyArr = inputStr.split(' ');
-    
+  if(inputStr.match('北斗') != null){ 
+       
     let rplyArr=['\
 中華鍋貼', '\
 火鍋','\
@@ -122,6 +121,7 @@ function food(inputStr){
 八方雲集','\
 岩葉拉麵'];
       return rplyArr[Math.floor((Math.random() * (rplyArr.length)) + 0)];
+  }
 }
         
 function nomalDiceRoller(inputStr){
