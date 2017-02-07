@@ -117,8 +117,14 @@ function parseInput(rplyToken, inputStr) {
       }
 
 function food(inputStr){
+  let rplyArr = inputStr.split(' ');
+    
+  if (rplyArr.length == 1) return '也給我個位置吧，想被吐槽嗎!!'
+  
   if(inputStr.match('北斗') != null){ 
-       
+    
+    
+    
     let rplyArr=['\
 中華鍋貼', '\
 火鍋','\
