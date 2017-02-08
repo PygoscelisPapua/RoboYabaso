@@ -98,7 +98,7 @@ function parseInput(rplyToken, inputStr) {
         if (inputStr.match('進餐廳') != null) return '親 愛 精 誠' ;
         else
           
-        if (inputStr.match('好無聊喔') != null) return '婀 睡覺' ;
+        if (inputStr.match('好無聊喔') != null) return '喔 是喔 睡覺' ;
         else
         
         
