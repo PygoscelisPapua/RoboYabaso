@@ -104,7 +104,7 @@ function parseInput(rplyToken, inputStr) {
         
         //鴨霸獸指令開始於此
 
-          if (inputStr.match('鴨霸獸') != null) return YabasoReply(inputStr) ;
+          if (inputStr.match('聖獸') != null) return YabasoReply(inputStr) ;
         else
         //cc判定在此
         if (inputStr.toLowerCase().match(/^cc/)!= null) return CoC7th(inputStr.toLowerCase()) ;      
