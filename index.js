@@ -126,11 +126,26 @@ function understandeachother(inputStr){
   
   if(rplyArr.length == 1) return '什麼'
   
+  
   if(inputStr.match('communication') != null){
     let rplyArr=[
       '\身高',
       '\體重'];
     return rplyArr[Math.floor((Math.random()* (rplyArr.length)) + 0)];
+  }
+  else
+    
+  if(inputStr.match('開會') != null){
+    return '
+      107學年度新生訓練工作人員見面會\n
+      日期：2018年06月09日\n
+      時間：0900\n
+      地點：D101\n
+      內容：\n
+      1.與會人員互相認識\n
+      2.說明新生訓練大致籌備內容\n
+      3.分享活動經驗\n
+      4.視情況分享開會方式';
   }
 }
   
