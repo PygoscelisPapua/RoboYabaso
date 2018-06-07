@@ -101,6 +101,18 @@ function parseInput(rplyToken, inputStr) {
         if (inputStr.match('好無聊喔') != null) return '喔 是喔 睡覺' ;
         else
           
+        if (inputStr.match('阿喵') != null) return '喵~';
+        else
+          
+        if (inputStr.match('昌峻') != null) return '峻~';
+        else
+          
+        if (inputStr.match('貿元') != null) return '元~';
+        else
+          
+        if (inputStr.match('志勝') != null) return '有事嗎?';
+        else
+          
         if(inputStr.match('107') != null) return understandeachother(inputStr);
         else
         
