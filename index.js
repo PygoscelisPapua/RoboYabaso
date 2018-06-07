@@ -140,7 +140,13 @@ function understandeachother(inputStr){
   }
   
   else
-    return '不要跟我說話'
+  {
+    let rplyArr=[
+      '\不要跟我說話', 
+      '\你打擾到別人了'
+    ]
+    return rplyArr[Math.floor((Math.random() * (rplyArr.length)) + 0)];
+  }
 }
   
 
