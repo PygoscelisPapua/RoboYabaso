@@ -147,11 +147,20 @@ function understandeachother(inputStr){
   
   if(rplyArr.length == 1) return '什麼'
   
+  if(inputStr.match('talk ') != null){
+    return '你身高多少';
+  }
   
-  if(inputStr.match('communication') != null){
+  if(inputStr.match('talk') != null){
     let rplyArr=[
-      '\身高',
-      '\體重'];
+      '\取過最厲害的遊戲ID',
+      '\你做菜最失敗的一次狀況',
+      '\聽過最厲害的告白內容',
+      '\未來想娶/嫁的人的職業',
+      '\說一件可以做一整天都不會膩的事',
+      '\如果你可以同任何人聊天，包括歷史人物，你會選誰？',
+      '\如果今天發生Z病毒感染你會做哪些事情自救。',
+      '\如果有一天老去，你最希望讓別人記住什麼'];
     return rplyArr[Math.floor((Math.random()* (rplyArr.length)) + 0)];
   }
   else
