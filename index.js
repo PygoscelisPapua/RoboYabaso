@@ -101,6 +101,15 @@ function parseInput(rplyToken, inputStr) {
         if (inputStr.match('好無聊喔') != null) return '喔 是喔 睡覺' ;
         else
           
+        if (inputStr.match('睡不著') != null) return '需要給你一棍嗎' ;
+        else
+          
+        if (inputStr.match('上班不能睡') != null) return '去找老闆阿' ;
+        else
+          
+        if (inputStr.match('找老闆有用嗎') != null) return '恩 好 沒用' ;
+        else
+          
         if (inputStr.match('阿喵') != null) return '喵~';
         else
           
