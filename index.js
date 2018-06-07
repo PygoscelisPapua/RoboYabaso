@@ -100,6 +100,9 @@ function parseInput(rplyToken, inputStr) {
           
         if (inputStr.match('好無聊喔') != null) return '喔 是喔 睡覺' ;
         else
+          
+        if(inputStr.match('107') != null) return understandeachother(inputStr);
+        else
         
         
         //鴨霸獸指令開始於此
@@ -118,11 +121,24 @@ function parseInput(rplyToken, inputStr) {
         else return undefined;
         
       }
+function understandeachother(inputStr){
+  let rplyArr = inputStr.split(' ');
+  
+  if(rplyArr.length == 1) return '什麼'
+  
+  if(inputStr.match('communication') != null){
+    let rplyArr=[
+      '\身高',
+      '\體重'];
+    return replyArr[Math.floor((Math.random()* (rplyArr.length)) + 0)];
+  }
+}
+  
 
 function food(inputStr){
   let rplyArr = inputStr.split(' ');
     
-  if (rplyArr.length == 1) return '也給我個位置吧，想被吐槽嗎!!'
+  if (rplyArr.length == 1) return '什麼'
   
   if(inputStr.match('北斗') != null){ 
     
