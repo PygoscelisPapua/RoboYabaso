@@ -130,7 +130,7 @@ function understandeachother(inputStr){
     let rplyArr=[
       '\身高',
       '\體重'];
-    return replyArr[Math.floor((Math.random()* (rplyArr.length)) + 0)];
+    return rplyArr[Math.floor((Math.random()* (rplyArr.length)) + 0)];
   }
 }
   
