@@ -110,16 +110,22 @@ function parseInput(rplyToken, inputStr) {
         if (inputStr.match('找老闆有用嗎') != null) return '恩 好 沒用' ;
         else
           
-        if (inputStr.match('阿喵') != null) return '喵~';
+        if (inputStr.match('阿喵 ') != null) return '喵~';
         else
           
-        if (inputStr.match('昌峻') != null) return '峻~';
+        if (inputStr.match('昌峻 ') != null) return '峻~';
         else
           
-        if (inputStr.match('貿元') != null) return '元~';
+        if (inputStr.match('貿元 ') != null) return '元~';
         else
           
-        if (inputStr.match('志勝') != null) return '有事嗎?';
+        if (inputStr.match('志勝 ') != null){
+          let rplyArr = [
+            '\有事嗎?',
+            '\你所撥的號碼通話中 請稍後再撥'
+          ]
+          return rplyArr[Math.floor(Math.random() * (rplyArr.length)) + 0];
+        }
         else
           
         if(inputStr.match('107') != null) return understandeachother(inputStr);
