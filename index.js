@@ -133,6 +133,9 @@ function parseInput(rplyToken, inputStr) {
         if(inputStr.match('萬事屋') != null) return '有!';
         else
           
+        if(inputStr.match('閉嘴') != null) return '兇屁兇';
+        else
+          
         if(inputStr.match('107') != null) return understandeachother(inputStr);
         else
         
