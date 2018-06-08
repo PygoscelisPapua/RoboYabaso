@@ -119,6 +119,8 @@ function parseInput(rplyToken, inputStr) {
         if (inputStr.match('貿元 ') != null) return '元~';
         else
           
+        
+          
         if (inputStr.match('志勝 ') != null){
           let rplyArr = [
             '\有事嗎?',
@@ -126,6 +128,9 @@ function parseInput(rplyToken, inputStr) {
           ]
           return rplyArr[Math.floor(Math.random() * (rplyArr.length)) + 0];
         }
+        else
+          
+        if(inputStr.match('萬事屋') != null) return '有!';
         else
           
         if(inputStr.match('107') != null) return understandeachother(inputStr);
