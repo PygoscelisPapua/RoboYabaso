@@ -206,9 +206,6 @@ function food(inputStr){
   if (rplyArr.length == 1) return '什麼'
   
   if(inputStr.match('北斗') != null){ 
-    
-    
-    
     let rplyArr=['\
 中華鍋貼', '\
 火鍋','\
@@ -217,6 +214,20 @@ function food(inputStr){
 八方雲集','\
 岩葉拉麵'];
       return '那吃 '+rplyArr[Math.floor((Math.random() * (rplyArr.length)) + 0)]+' 好了';
+  }
+  else if(inputStr.match('三協') != null){
+    let rplyArr = [
+      '\八方雲集',
+      '\老上海',
+      '\築也',
+      '\老周',
+      '\鴨董',
+      '\粥',
+      '\早餐',
+      '\焗烤',
+      '\小說店'
+    ];
+    return '吃 ' + rplyArr[Math.floor((Math.random()* (rplyArr.length)) + 0) + ' 好了']
   }
   else{
     return '我不知道那裏有什麼好吃的，嗆我呀 ! !'
