@@ -216,8 +216,7 @@ function food(inputStr){
       return '那吃 '+rplyArr[Math.floor((Math.random() * (rplyArr.length)) + 0)]+' 好了';
   }
   else if(inputStr.match('三協') != null){
-    let rplyArr = [
-      '\八方雲集',
+    let rplyArr = ['\八方雲集',
       '\老上海',
       '\築也',
       '\老周',
@@ -227,7 +226,7 @@ function food(inputStr){
       '\焗烤',
       '\小說店'
     ];
-    return '吃 ' + rplyArr[Math.floor((Math.random()* (rplyArr.length)) + 0) + ' 好了']
+    return '吃 '+rplyArr[Math.floor((Math.random() * (rplyArr.length)) + 0)]+' 好了';
   }
   else{
     return '我不知道那裏有什麼好吃的，嗆我呀 ! !'
