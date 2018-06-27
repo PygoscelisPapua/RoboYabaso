@@ -97,7 +97,7 @@ function parseInput(rplyToken, inputStr) {
             '\祐程',
             '\志勝'
           ];
-          return rplyArr[Math.floor((Math.random()* (rplyArr.length)) + 0)];
+          return rplyArr[Math.floor((Math.random()* (rplyArr.length)) + 1)];
         }else 
         
         if (inputStr.match('肚子餓') != null) return food(inputStr) ;
@@ -237,7 +237,7 @@ function food(inputStr){
       '\焗烤',
       '\小說店'
     ];
-    return '吃 '+rplyArr[Math.floor((Math.random() * (rplyArr.length)) + 0)]+' 好了';
+    return '吃 '+rplyArr[Math.floor((Math.random() * (rplyArr.length)) + 1)]+' 好了';
   }
   else{
     return '我不知道那裏有什麼好吃的，嗆我呀 ! !'
