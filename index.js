@@ -98,8 +98,12 @@ function parseInput(rplyToken, inputStr) {
             '\志勝'
           ];
           return rplyArr[Math.floor((Math.random()* (rplyArr.length)) + 1)];
-        }else 
-        
+        }else
+        if (inputStr.match('祐程') != null){
+          return '肩膀哥';
+        }
+        else
+          
         if (inputStr.match('肚子餓') != null) return food(inputStr) ;
         else
         
