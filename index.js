@@ -134,6 +134,9 @@ function parseInput(rplyToken, inputStr) {
         if (inputStr.match('貿元 ') != null) return '元~';
         else
           
+        if(inputStr.match('我不要') != null) return '不行喔';
+        else
+          
         
           
         if (inputStr.match('志勝 ') != null){
