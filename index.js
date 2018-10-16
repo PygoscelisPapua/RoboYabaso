@@ -88,7 +88,7 @@ function parseInput(rplyToken, inputStr) {
         _isNaN = function(obj) {
          return isNaN(parseInt(obj));
         }  
-        if (inputStr.match('抽籤 三協') != null){
+        /*if (inputStr.match('抽籤 三協') != null){
           let rplyArr=[
             '\涵榛',
             '\伯羽',
@@ -107,7 +107,7 @@ function parseInput(rplyToken, inputStr) {
         if (inputStr.match('惠勛') != null){
           return '副本哥';
         }
-        else
+        else*/
           
         if (inputStr.match('肚子餓') != null) return food(inputStr) ;
         else
