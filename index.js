@@ -107,6 +107,9 @@ function parseInput(rplyToken, inputStr) {
         if (inputStr.match('惠勛') != null){
           return '副本哥';
         }
+        else
+        
+        if(inputStr.match('點餐') != null) return '現在! 立刻! 馬上!';
         else*/
           
         if (inputStr.match('肚子餓') != null) return food(inputStr) ;
@@ -142,8 +145,7 @@ function parseInput(rplyToken, inputStr) {
         if(inputStr.match('我不要') != null) return '不行喔';
         else
           
-        if(inputStr.match('點餐') != null) return '現在! 立刻! 馬上!';
-        else
+        
           
         
           
