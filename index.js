@@ -111,6 +111,13 @@ function parseInput(rplyToken, inputStr) {
         
         if(inputStr.match('點餐') != null) return '現在! 立刻! 馬上!';
         else*/
+        
+        if (inputStr.match('惠勛') != null){
+          return '飲料';
+        }
+        else
+        
+        function parseInput(rplyToken, inputStr) {
           
         if (inputStr.match('肚子餓') != null) return food(inputStr) ;
         else
